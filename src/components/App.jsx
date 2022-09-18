@@ -4,6 +4,8 @@ import data from './Statistics/data.json';
 import { Statistics } from './Statistics';
 import friends from './FriendList/friends.json';
 import { FriendList } from './FriendList';
+import transactions from './TransactionHistory/transactions.json';
+import { TransactionHistory } from './TransactionHistory';
 import styled from 'styled-components';
 
 const BlockContainer = styled.div`
@@ -33,6 +35,9 @@ export const App = () => {
       </BlockContainer>
       <BlockContainer>
         <FriendList friends={friends} />
+      </BlockContainer>
+      <BlockContainer>
+        <TransactionHistory items={transactions} />
       </BlockContainer>
     </>
   );
