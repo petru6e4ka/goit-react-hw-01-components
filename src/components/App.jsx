@@ -2,6 +2,8 @@ import user from './Profile/user.json';
 import { Profile } from './Profile';
 import data from './Statistics/data.json';
 import { Statistics } from './Statistics';
+import friends from './FriendList/friends.json';
+import { FriendList } from './FriendList';
 import styled from 'styled-components';
 
 const BlockContainer = styled.div`
@@ -28,6 +30,9 @@ export const App = () => {
       <BlockContainer>
         <Statistics title="Upload stats" stats={data} />
         <Statistics stats={data} />
+      </BlockContainer>
+      <BlockContainer>
+        <FriendList friends={friends} />
       </BlockContainer>
     </>
   );
