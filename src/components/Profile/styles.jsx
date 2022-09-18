@@ -46,7 +46,7 @@ export const Location = styled(Tag)``;
 export const Statistics = styled.ul`
   display: flex;
   width: 100%;
-  background: #edf0f7;
+  background: #f5f6fa;
   border-top: solid 1px #dddddd;
 
   & li {
