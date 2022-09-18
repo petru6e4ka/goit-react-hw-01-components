@@ -37,6 +37,7 @@ export const Table = styled.table`
     line-height: 1.5rem;
     vertical-align: inherit;
     border-right: 1px solid rgb(224, 224, 224);
+    border-left: 1px solid rgb(224, 224, 224);
     text-align: center;
     padding: 10px;
   }
