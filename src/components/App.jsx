@@ -1,5 +1,7 @@
 import user from './Profile/user.json';
 import { Profile } from './Profile';
+import data from './Statistics/data.json';
+import { Statistics } from './Statistics';
 import styled from 'styled-components';
 
 const BlockContainer = styled.div`
@@ -13,14 +15,20 @@ const BlockContainer = styled.div`
 
 export const App = () => {
   return (
-    <BlockContainer>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-    </BlockContainer>
+    <>
+      <BlockContainer>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </BlockContainer>
+      <BlockContainer>
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+      </BlockContainer>
+    </>
   );
 };
